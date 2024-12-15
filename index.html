@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/image/logoss.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security labz</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Add event listeners for login and signup buttons
+      document.addEventListener('DOMContentLoaded', () => {
+        const loginButton = document.getElementById('login-button');
+        const signupButton = document.getElementById('signup-button');
+
+        if (loginButton) {
+          loginButton.addEventListener('click', () => {
+            window.location.href = 'http://localhost:5173/login';
+          });
+        }
+
+        if (signupButton) {
+          signupButton.addEventListener('click', () => {
+            window.location.href = 'http://localhost:5173/signup';
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
